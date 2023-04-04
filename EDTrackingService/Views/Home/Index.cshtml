@@ -1,0 +1,35 @@
+﻿@model EDTrackingService.Models.SortingListModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>Sorting</h2>
+
+@foreach (var s in Model.sortings)
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Warehouse</th>
+                <th>Area</th>
+                <th>Zip</th>
+                <th>Parcel name</th>
+                <th>Parcel status</th>
+                <th>Entry Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">@s.Id</th>
+                <td>@s.warehouse.Name</td>
+                <td>@s.area.Name</td>
+                <td>@s.area.Zip</td>
+                <td>@s.parcel.Name</td>
+                <td>@s.parcel.status.Name</td>
+                <td>@s.EntryTime</td>
+            </tr>
+        </tbody>
+    </table>
+}
+
