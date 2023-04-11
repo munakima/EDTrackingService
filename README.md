@@ -21,7 +21,7 @@ EDTrackingService is a package delivery tracking system designed to provide end-
 - ASP.NET
 - ASP.NET MVC
 - Entity Framework
-- HTML, CSS, and JavaScript
+- HTML, Razor, CSS, and JavaScript
 - Microsoft SQL Server
 
 ## Getting Started
